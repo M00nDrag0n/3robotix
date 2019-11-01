@@ -3,3 +3,26 @@ body {
   font-size: 20px;
   text-align: center;
 }
+
+#bot1 img {
+  height: 610px;
+  width: 600px;
+}
+
+.outside {
+  background-image: url("http://w4.wallls.com/uploads/original/201711/26/wallls.com_172045.jpg");
+  color: #ff0000;
+  font-size: 30px;
+  margin-top: 200px;
+  text-align: center;
+}
+
+ #bot2 img {
+  display: none;
+  height: 300px;
+  width: 300px;
+}
+
+.invisiclass {
+  display: none;
+}

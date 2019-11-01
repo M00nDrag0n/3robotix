@@ -21,6 +21,18 @@ if (q1 % 3 === 0 && q1 % 5 === 0) {
 //   // css change, text and image that says "you have to enter the asylum before you can experience it, silly"
   }
 }
+
+if (existence === "You have to enter the asylum in order to actually win against the creatures within..." ) {
+  $("body").removeClass();
+  $(".container").hide();
+  $("#bot1").hide();
+  $("body").addClass("outside");
+  // $(existence).click(function() {
+
+  $("#bot2").show();
+// });
+}
+
 console.log("data is", q1);
 
     $("#emptyDiv").text(existence);
