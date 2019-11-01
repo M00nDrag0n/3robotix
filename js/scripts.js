@@ -5,20 +5,30 @@ $(document).ready(function() {
 var q1 = $("#q1").val();
 var existence;
 
+
+$("#hi").click(function(event) {
+  $("body").removeClass();
+  $("body").addClass("asylum");
+});
+
+
+
+
 for (i = 0; i < q1; i++) {
 
 if (q1 % 3 === 0 && q1 % 5 === 0) {
   existence = [q1 + ": BEEP! BOOP! I SEE YOU HAHAHAHAHAHAHAHAHAHA!!! I CAN'T HANDLE THESE NUMBERS!!!!!!!!!!!!!!!"];
-  // show monster
 } else if (q1 % 3 === 0) {
   existence = [q1 + ": Beep!"];
 
-} else if (q1 % 5=== 0) {
+} else if (q1 % 5 === 0) {
   existence = [q1 + ": Boop!"];
+
+} else if (q1 === 0) {
+  existence = [q1 + ": Standby."];
 
 } else {
   existence = ("You have to enter the asylum in order to actually win against the creatures within...");
-//   // css change, text and image that says "you have to enter the asylum before you can experience it, silly"
   }
 }
 
@@ -27,10 +37,18 @@ if (existence === "You have to enter the asylum in order to actually win against
   $(".container").hide();
   $("#bot1").hide();
   $("body").addClass("outside");
+  $("#bot2").show();
+  $(".invisiclass").show();
+} else if (existence === ": BEEP! BOOP! I SEE YOU HAHAHAHAHAHAHAHAHAHA!!! I CAN'T HANDLE THESE NUMBERS!!!!!!!!!!!!!!!") {
+  // $("body").removeClass();
+  // $(".container").hide();
+  // $("#bot1").hide();
+  $("body").addClass("explosion");
   // $(existence).click(function() {
 
   $("#bot2").show();
-// });
+} else {
+
 }
 
 console.log("data is", q1);

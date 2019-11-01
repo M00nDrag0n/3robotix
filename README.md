@@ -1,0 +1,2 @@
+- program spits out text depending on number outcomes
+-program hides and shows images and buttons depending on what is clicked on
