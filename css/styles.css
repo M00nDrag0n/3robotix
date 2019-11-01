@@ -1,4 +1,4 @@
-/* body {
+body {
   font-family: 'Spectral';
   font-size: 20px;
   text-align: center;
@@ -31,14 +31,15 @@
 
 .explosion {
   font-size: 30px;
-  margin-top: 200px;
+  margin-top: 400px;
   text-align: center;
   background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--LfgY--2a--/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/vp3g5nckbrnjdrf2ypq3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
+  background-color: black;
 }
 
 .asylum {
   background-image: url("");
-} */
+}
